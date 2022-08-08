@@ -1,6 +1,7 @@
 exports.config = {
   tests: './*_test.js',
   output: './output',
+  timeout:10000,
   multiple: {
     basic: {
       browsers: ["chrome", "firefox"]
@@ -8,8 +9,10 @@ exports.config = {
   },
   helpers: {
     Playwright: {
-      url: 'http://executeautomation.com/demosite',
-      show: true
+      url: 'https://www.diagrams.net/',
+      show: true,
+      waitForAction:500,
+      waitForTimeout:60000,
     }
   },
   include: {
