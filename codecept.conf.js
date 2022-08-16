@@ -1,7 +1,7 @@
 exports.config = {
   tests: './*_test.js',
   output: './output',
-  timeout:10000,
+  timeout:20000,
   multiple: {
     basic: {
       browsers: ["chrome", "firefox"]
@@ -11,7 +11,7 @@ exports.config = {
     Playwright: {
       url: 'https://www.diagrams.net/',
       show: true,
-      waitForAction:500,
+      waitForAction:1500,
       waitForTimeout:60000,
     }
   },
